@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<title>A1 Codes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+<!-- video -->
+<video autoplay muted loop id="myVideo">
+  <source src="video/movie.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<!-- description div-->
+
+<div class="content">
+  <h1> <font color="white">< A1 Codes ></font></h1>
+
+<a href="sobre.html" target="_blank" class="button">SOBRE</a>
+<button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,88 @@
+p {
+  font-family: "Helvetica", arial, verdana;
+}
+
+.header {
+  padding: 1px; /* some padding */
+  text-align: left; /* left the text */
+  background: white; /* white background */
+  color: black; /* black text color */
+}
+
+/* Increase the font size of the <h1> element */
+.header h6 {
+  font-size: 35px;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  font-family: Helvetica;
+}
+
+/* Links inside the navbar */
+.navbar a:hover{color:black;}
+.navbar a{
+  float: left;
+  font-size: 16px;
+  color: gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: gray;
+  padding: 14px 16px;
+  background-color: white;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a white background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: gray;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a white background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+

@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  padding: 20px;
+  font-family: serif;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 h1 {
+  font-size: 50px;
+  word-break: break-all;
+  font-family: serif;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+body {
+  margin: 10px;
+}
+
+/* page properties */
+p {
+  font-family: "Helvetica";
+}
+
+ul {
+  font-family: "Helvetica"
+}
+
+a {
+  font-family: "Helvetica"
+}
+
+/* unvisited link */
+a:link {
+  color: gray;
+}
+
+/* visited link */
+a:visited {
+  color: gray;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+/* selected link */
+a:active {
+  color: gray;
+}
+/* square type list */
+  ul.b {
+  list-style-type: square;
+}
+
+  * {box-sizing: border-box;}
+
+
+.header {
+  padding: 1px; /* some padding */
+  text-align: left; /* left the text */
+  background: white; /* white background */
+  color: black; /* black text color */
+}
+
+/* Increase the font size of the <h1> element */
+.header h6 {
+  font-size: 35px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: gray;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: white;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+body {margin: 10px;}
+/* Create three unequal columns that floats next to each other */
+.column {float: left;padding: 10px;}
+/* Left and right column */
+.column.side {width: 25%;}
+/* Middle column */
+.column.middle {width: 50%;}
+/* Clear floats after the columns */
+.row:after {content: "";display: table;clear: both;}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {.column.side, .column.middle {width: 100%;}}
